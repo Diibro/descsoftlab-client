@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "Best Software Company",
   ].join(", "),
   robots: "index, follow", // Allows Google to crawl the site
-  authors: [{ name: "Desc Softlab Ltd" }, {name: "Dushime Brother"}],
+  authors: [{name: "Dushime Brother"}],
   openGraph: {
     title: "Desc Softlab Ltd | Top Software & IT Solutions",
     description:
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://descsoftlab.com/images/og-image.jpg", // Replace with actual image
+        url: "https://descsoftlab.com/images/og-image.jpeg", // Replace with actual image
         width: 1200,
         height: 630,
         alt: "Desc Softlab Ltd - Leading IT Solutions",
@@ -69,10 +69,10 @@ export default function RootLayout({
               "@type": "Organization",
               name: "Desc Softlab Ltd",
               url: "https://descsoftlab.com",
-              logo: "https://descsoftlab.com/images/logo.png", 
+              logo: "https://descsoftlab.com/logos/logo.png", 
               contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+250XXXXXXXXX",
+                telephone: "+250780795232",
                 contactType: "customer service",
               },
               sameAs: [
