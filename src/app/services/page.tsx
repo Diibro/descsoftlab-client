@@ -67,13 +67,13 @@ const ServicesPage = () => {
      <ClientPage>
           <div className="bg-gray-50 min-h-screen w-full">
       {/* Header Section */}
-      <div className="bg-main-blue-700 text-white text-center py-12">
+      <div className="bg-[#1c2c3c] text-white text-center py-12">
         <h1 className="text-3xl font-bold">Our Services</h1>
-        <p className="mt-2 text-lg">Empowering businesses with innovative IT solutions</p>
+        <p className="mt-2 text-lg">Comprehensive digital solutions tailored to meet your business needs and drive growth</p>
       </div>
 
       {/* Services Grid */}
-      <div className="mx-auto py-12 px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="mx-auto py-12 px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {services.map((service) => (
           <ServiceCard
             key={service.title}
@@ -85,16 +85,16 @@ const ServicesPage = () => {
       </div>
 
       {/* Call to Action */}
-      <div className="text-center py-12">
-        <h2 className="text-2xl font-semibold text-main-blue-800">
+      <div className="text-center py-10 w-full">
+        <h2 className="text-3xl font-semibold text-[#1a2b5e]">
           Let&lsquo;s Work Together
         </h2>
-        <p className="text-gray-600 mt-2">
+        <p className="text-gray-600 mt-4 text-2xl">
           Contact us today to discuss how we can help your business grow.
         </p>
         <a
           href="/contact"
-          className="mt-4 inline-block px-6 py-3 bg-main-blue-600 text-white font-semibold rounded-md shadow-md transition hover:bg-main-blue-700"
+          className="mt-6 inline-block px-10 py-5 bg-[#1c2c3c] text-white font-semibold rounded-md shadow-md transition hover:bg-[#1c2c3c] text-xl"
         >
           Get in Touch
         </a>
