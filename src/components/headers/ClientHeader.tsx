@@ -11,11 +11,7 @@ const navLinks = [
      {name:"Our works", dest: '/works'}
 ]
 
-const DeskNavlink = ({link,active}: {link:{name:string,dest:string},active:boolean}) => {
-     return (
-          <Link href={link.dest} className={`text-[1.2rem] font-bold px-[10px] py-[5px] rounded-[30px] ${active? "bg-main-blue-900 text-main-blue-50 " :"text-main-blue-800"} hover:bg-main-blue-600 hover:text-white transition-all duration-300`}>{link.name}</Link>
-     )
-}
+
 
 const MobileNavlink = ({link}: {link:{name:string,dest:string}}) => {
      return (

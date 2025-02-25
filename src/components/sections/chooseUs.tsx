@@ -57,7 +57,7 @@ export const ChooseUsSection = () => {
                             <IoCheckmarkCircleOutline />
                         </span>
                         <p className="text-[1.1rem] text-gray-700 font-medium">
-                            Contribute to Rwanda's digital economy
+                            Contribute to Rwanda&apos;s digital economy
                         </p>
                     </div>
                 </div>
