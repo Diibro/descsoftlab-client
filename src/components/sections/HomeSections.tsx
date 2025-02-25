@@ -3,23 +3,29 @@ import Link from "next/link"
 
 export const HeroSection = () => {
      return (
-          <section className="w-full bg-gray-100 relative grid grid-cols-1 md:grid-cols-2 gap-[20px] py-[40px] ">
-               <div className="w-full h-full relative">
-                    <div className="w-full h-full absolute top-0 left-0 z-0 " >
-                         <div className="w-[100px] aspect-square rounded-full bg-main-blue-400 absolute bottom-[20px] left-[20px] "></div>
-                    </div>
-                    <div className="w-full h-full relative flex-col text-center justify-center gap-[20px] z-10 p-[30px]  ">
-                         <h1 className="text-[2rem] font-extrabold text-main-blue-950 w-[70%]">Empowering Digital Transformation</h1>
-                         <p className="text-[1.2rem] text-gray-600 text-start  w-[70%] ">Desc Softlab is dedicated to making digital services accessible and affordable accross Rwanda and Africa</p>
-                         <Link href={'/'} className="w-auto px-[15px] py-[7.5px] bg-main-blue-900  text-white text-[0.9rem] rounded-[30px] hover:bg-main-blue-600  " >Explore Our services</Link>
+          <section className="w-full min-h-screen bg-gray-100 relative grid grid-cols-1 md:grid-cols-2 gap-[20px] items-center">
+               <div className="w-full h-full relative flex flex-col justify-center p-[50px] md:pl-[100px]">
+                    <div className="w-[100px] aspect-square rounded-full bg-main-blue-200 absolute bottom-[20px] left-[20px] opacity-70"></div>
+                    
+                    <div className="relative z-10 flex flex-col items-start gap-[20px]">
+                         <h1 className="text-[2.5rem] font-extrabold text-main-blue-950 leading-tight">Empowering Digital Transformation</h1>
+                         <p className="text-[1.2rem] text-gray-600 max-w-[80%]">Desc Softlab is dedicated to making digital services accessible and affordable across Rwanda and Africa.</p>
+                         <Link href={'/'} className="mt-4 px-[30px] py-[25px] bg-main-blue-900 text-white text-[1.2rem] rounded-[30px] hover:bg-main-blue-600 transition-all duration-300">Explore Our Services →</Link>
                     </div>
                </div>
-               <div className="w-full h-full relative">
-                    <div className="w-full h-full absolute top-0 left-0 ">
-                    </div>
-                    <div className="w-full h-full">
-
-                         <Image src={'/images/comp-desk.jpg'} width={400} height={400} alt="computer desk image" className="w-[60%] mx-auto aspect-square rounded-full relative object-cover " />
+               <div className="w-full h-full relative flex items-center justify-center pt-[10px] md:pt-[5px]">
+                    {/* Decorative circle element */}
+                    <div className="absolute w-[70%] aspect-square rounded-full bg-gray-200 opacity-50 z-0"></div>
+                    
+                    {/* Circular image container */}
+                    <div className="relative z-10 w-[70%] aspect-square rounded-full overflow-hidden border-8 border-white shadow-lg">
+                         <Image 
+                              src={'/images/scale_1200.jpg'} 
+                              fill
+                              alt="Workspace with laptop, notebook and coffee" 
+                              className="object-cover" 
+                              sizes="(max-width: 700px) 50vw, 50vw"
+                         />
                     </div>
                </div>
           </section>
