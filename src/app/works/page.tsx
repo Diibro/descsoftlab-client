@@ -29,35 +29,35 @@ const ProjectsPage = () => {
     {
       title: "AI-Powered E-commerce Platform",
       description: "Developed an advanced AI-driven e-commerce platform for seamless online shopping.",
-      image: "/images/projects/ecommerce-ai.jpg",
+      image: "/images/ecommerce-ai.jpg",
       link: "https://client-ecommerce.com",
     },
     {
       title: "Enterprise ERP Solution",
       description: "Built a scalable ERP system for optimizing business operations.",
-      image: "/images/projects/erp-solution.jpg",
+      image: "/images/erp-solution.jpg",
     },
   ];
 
   const clients = [
-    { name: "Tech Solutions Inc.", logo: "/images/clients/tech-solutions.png" },
-    { name: "Global Finance Ltd.", logo: "/images/clients/global-finance.png" },
+    { name: "Tech Solutions Inc.", logo: "/images/tech-solutions.jpg" },
+    { name: "Global Finance Ltd.", logo: "/images/global-finance.jpg" },
   ];
 
   const partners = [
-    { name: "AWS Partner Network", logo: "/images/partners/aws.png" },
-    { name: "Microsoft Azure", logo: "/images/partners/azure.png" },
+    { name: "AWS Partner Network", logo: "/images/aws.webp" },
+    { name: "Microsoft Azure", logo: "/images/azure.webp" },
   ];
 
   const products = [
     {
       name: "AI Chatbot Assistant",
-      image: "/images/products/ai-chatbot.jpg",
+      image: "/images/ai-chatbot.jpeg",
       description: "An advanced AI-powered chatbot for automating customer interactions.",
     },
     {
       name: "Cybersecurity Suite",
-      image: "/images/products/cybersecurity-suite.jpg",
+      image: "/images/cybersecurity-suite.webp",
       description: "A comprehensive security solution for businesses to protect against cyber threats.",
     },
   ];
@@ -66,14 +66,14 @@ const ProjectsPage = () => {
     <ClientPage>
      <div className="bg-gray-50 min-h-screen w-full">
       {/* Hero Section */}
-      <div className="bg-main-blue-700 text-white text-center py-12">
+      <div className="bg-[#1c2c3c] text-white text-center py-12">
         <h1 className="text-4xl font-bold">Our Projects & Clients</h1>
         <p className="mt-2 text-lg">Delivering Excellence, Innovation & Digital Transformation</p>
       </div>
 
       {/* Projects Section */}
-      <div className="max-w-6xl mx-auto px-6 py-12">
-        <h2 className="text-3xl font-semibold text-main-blue-800">🚀 Featured Projects</h2>
+      <div className="w-full mx-auto px-10 py-12">
+        <h2 className="text-3xl font-semibold text-[#1c2c3c]">🚀 Featured Projects</h2>
         <div className="grid md:grid-cols-2 gap-6 mt-6">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
@@ -82,10 +82,10 @@ const ProjectsPage = () => {
       </div>
 
       {/* Clients & Partners Section */}
-      <div className="bg-main-blue-50 py-12">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-semibold text-main-blue-800 text-center">🤝 Our Clients & Partners</h2>
-          <div className="grid md:grid-cols-4 gap-6 mt-6">
+      <div className="bg-transparent py-12 px-10">
+        <div className="w-full mx-auto px-6 py-12">
+          <h2 className="text-3xl font-semibold text-[#1c2c3c] text-center">🤝 Our Clients & Partners</h2>
+          <div className="grid md:grid-cols-2 gap-6  py-12">
             {clients.map((client, index) => (
               <ClientCard key={index} {...client} />
             ))}
@@ -97,9 +97,9 @@ const ProjectsPage = () => {
       </div>
 
       {/* Product Showcase */}
-      <div className="max-w-6xl mx-auto px-6 py-12">
-        <h2 className="text-3xl font-semibold text-main-blue-800">🛠️ Product Samples</h2>
-        <div className="grid md:grid-cols-3 gap-6 mt-6">
+      <div className="w-full mx-auto px-10 py-12">
+        <h2 className="text-3xl font-semibold text-[#1c2c3c] text-center">🛠️ Product Samples</h2>
+        <div className="grid md:grid-cols-2 gap-6 mt-6">
           {products.map((product, index) => (
             <ProductCard key={index} {...product} />
           ))}

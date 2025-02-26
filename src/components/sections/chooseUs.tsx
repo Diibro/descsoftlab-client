@@ -6,7 +6,7 @@ export const ChooseUsSection = () => {
             <div className="max-w-[1512px] mx-auto px-[20px]">
                 {/* Section Title */}
                 <div className="w-full text-center mb-[60px]">
-                    <h2 className="text-[3rem] font-bold text-[#1a2b5e]">Why choose us ?</h2>
+                    <h2 className="text-[2.5rem] font-bold text-[#1a2b5e]">Why choose us ?</h2>
                 </div>
                 
                 {/* Features Grid */}
