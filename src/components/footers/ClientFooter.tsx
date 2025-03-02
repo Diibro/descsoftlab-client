@@ -33,8 +33,8 @@ const ClientFooter = () => {
             <p className='text-gray-400 text-[1.0rem] leading-[1.5]'>Desc Softlab</p>
             <Link href="/" className='hover:text-blue-400 transition-colors text-[1.0rem] leading-[1.5]'>Home</Link>
             <Link href="/services" className='hover:text-blue-400 transition-colors text-[1.0rem] leading-[1.5]'>Services</Link>
-            <Link href="/about-us" className='hover:text-blue-400 transition-colors text-[1.0rem] leading-[1.5]'>About Us</Link>
-            <Link href="/contact" className='hover:text-blue-400 transition-colors text-[1.0rem] leading-[1.5]'>Contact</Link>
+            <Link href="/about" className='hover:text-blue-400 transition-colors text-[1.0rem] leading-[1.5]'>About Us</Link>
+            <Link href="/contact-us" className='hover:text-blue-400 transition-colors text-[1.0rem] leading-[1.5]'>Contact</Link>
           </div>
 
           {/* Our Services Column */}
