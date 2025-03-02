@@ -15,11 +15,11 @@ const ClientFooter = () => {
             <p className='text-gray-400 text-[1.0rem] leading-[1.5]'>Desc Softlab</p>
             <div className='flex items-center gap-[15px]'>
               <IoMailOutline className='text-blue-400 text-[1.8rem]' />
-              <span className='text-[1.0rem] leading-[1.5]'>Support: descsoft@gmail.com</span>
+              <span className='text-[1.0rem] leading-[1.5]'>Support: descsoft22@gmail.com</span>
             </div>
             <div className='flex items-center gap-[15px]'>
               <IoCallOutline className='text-blue-400 text-[1.8rem]' />
-              <span className='text-[1.0rem] leading-[1.5]'>General: +250792548195</span>
+              <span className='text-[1.0rem] leading-[1.5]'>General: +250780795232</span>
             </div>
             <div className='flex items-center gap-[15px]'>
               <IoLocationOutline className='text-blue-400 text-[1.8rem]' />
@@ -41,22 +41,22 @@ const ClientFooter = () => {
           <div className='flex flex-col gap-[20px]'>
             <h3 className='text-white text-[1.5 rem] font-bold mb-[10px] leading-[1.2]'>Our Services</h3>
             <p className='text-gray-400 text-[1.0rem] leading-[1.5]'>Desc Softlab</p>
-            <Link href="/services/web-design" className='hover:text-blue-400 transition-colors text-[1.0rem] leading-[1.5]'>Web Design & Development</Link>
-            <Link href="/services/software" className='hover:text-blue-400 transition-colors text-[1.0rem] leading-[1.5]'>Software Development</Link>
-            <Link href="/services/consulting" className='hover:text-blue-400 transition-colors text-[1.0rem] leading-[1.5]'>IT Consulting</Link>
-            <Link href="/services/data" className='hover:text-blue-400 transition-colors text-[1.0rem] leading-[1.5]'>Data Processing</Link>
-            <Link href="/services/marketing" className='hover:text-blue-400 transition-colors text-[1.0rem] leading-[1.5]'>Digital Marketing</Link>
+            <Link href="/services" className='hover:text-blue-400 transition-colors text-[1.0rem] leading-[1.5]'>Web Design & Development</Link>
+            <Link href="/services" className='hover:text-blue-400 transition-colors text-[1.0rem] leading-[1.5]'>Software Development</Link>
+            <Link href="/services" className='hover:text-blue-400 transition-colors text-[1.0rem] leading-[1.5]'>IT Consulting</Link>
+            <Link href="/services" className='hover:text-blue-400 transition-colors text-[1.0rem] leading-[1.5]'>Data Processing</Link>
+            <Link href="/services" className='hover:text-blue-400 transition-colors text-[1.0rem] leading-[1.5]'>Digital Marketing</Link>
           </div>
 
           {/* Follow Us Column */}
           <div className='flex flex-col gap-[20px]'>
             <h3 className='text-white text-[1.5rem] font-bold mb-[10px] leading-[1.2]'>Follow us</h3>
             <p className='text-gray-400 text-[1.0rem] leading-[1.5]'>Desc Softlab</p>
-            <Link href="https://linkedin.com" className='flex items-center gap-[15px] hover:text-blue-400 transition-colors'>
+            <Link href="https://www.linkedin.com/company/desc-softlab/" className='flex items-center gap-[15px] hover:text-blue-400 transition-colors'>
               <FaLinkedin className='text-blue-400 text-[1.5rem]' />
               <span className='text-[1.0rem] leading-[1.5]'>LinkedIn</span>
             </Link>
-            <Link href="https://instagram.com" className='flex items-center gap-[15px] hover:text-blue-400 transition-colors'>
+            <Link href="https://www.instagram.com/descsoftlab.official?igsh=Z3R5dmkxZWRmbGUz" className='flex items-center gap-[15px] hover:text-blue-400 transition-colors'>
               <FaInstagram className='text-blue-400 text-[1.5rem]' />
               <span className='text-[1.0rem] leading-[1.5]'>Instagram</span>
             </Link>

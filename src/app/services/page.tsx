@@ -93,7 +93,7 @@ const ServicesPage = () => {
           Contact us today to discuss how we can help your business grow.
         </p>
         <a
-          href="/contact"
+          href="/contact-us"
           className="mt-6 inline-block px-10 py-5 bg-[#1c2c3c] text-white font-semibold rounded-md shadow-md transition hover:bg-[#1c2c3c] text-xl"
         >
           Get in Touch
