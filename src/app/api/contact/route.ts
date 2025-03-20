@@ -55,13 +55,13 @@ export async function POST(req: NextRequest) {
       service: "gmail",
       auth: {
         user: "dushimeconso1234@gmail.com",
-        pass: "",
+        pass: "deue qxmj xmld pehd",
       },
     });
   
     const mailOptions = {
       from: email,
-      to: "descsoftlab22@gmail.com",
+      to: "info@descsoftlab.com",
       subject: `New Contact Message from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     };
@@ -69,6 +69,7 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ message: "Message received successfully!" }, { status: 200 });
   } catch (error) {
+    console.log(error);
     return NextResponse.json({ error: "An error occurred" }, { status: 500 });
   }
 }

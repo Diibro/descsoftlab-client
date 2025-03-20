@@ -1,5 +1,6 @@
 import ClientPage from "@/components/wrappers/ClientPage";
 import { Metadata } from "next";
+import { ContactForm } from "./[components]/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact Us | Desc Softlab Ltd - Get in Touch",
@@ -36,58 +37,7 @@ const ContactPage = () => {
           {/* Contact Form */}
           <div className="lg:col-span-2 bg-white shadow-lg rounded-lg p-8">
             <h2 className="text-2xl font-semibold text-[#1c2c3c]">Send Us a Message</h2>
-            <form action="/api/contact" method="POST" className="mt-6 space-y-4">
-              <div>
-                <label className="block text-gray-700 font-medium">Full Name</label>
-                <input
-                  title="Client name"
-                  type="text"
-                  name="name"
-                  required
-                  className="w-full border border-gray-300 p-3 rounded-lg focus:border-[#1c2c3c] focus:ring-main-blue-500"
-                />
-              </div>
-
-              <div>
-                <label className="block text-gray-700 font-medium">Email Address</label>
-                <input
-                  title="Client email"
-                  type="email"
-                  name="email"
-                  required
-                  className="w-full border border-gray-300 p-3 rounded-lg focus:border-[#1c2c3c] focus:ring-main-blue-500"
-                />
-              </div>
-
-              <div>
-                <label className="block text-gray-700 font-medium">Subject</label>
-                <input
-                  title="Subject"
-                  type="text"
-                  name="subject"
-                  required
-                  className="w-full border border-gray-300 p-3 rounded-lg focus:border-main-blue-500 focus:ring-main-blue-500"
-                />
-              </div>
-
-              <div>
-                <label className="block text-gray-700 font-medium">Message</label>
-                <textarea
-                  title="Client message"
-                  name="message"
-                  rows={4}
-                  required
-                  className="w-full border border-gray-300 p-3 rounded-lg focus:border-main-blue-500 focus:ring-main-blue-500"
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                className="w-full bg-[#1c2c3c] text-white font-semibold py-3 rounded-lg hover:bg-[#1c2c3c] transition flex items-center justify-center space-x-2"
-              >
-                <span>Send Message</span> <span>✈️</span>
-              </button>
-            </form>
+            <ContactForm />
           </div>
 
           {/* Contact Info & Map */}
@@ -109,8 +59,8 @@ const ContactPage = () => {
 
                 <div className="flex items-center space-x-3">
                   <span className="text-[#1c2c3c] font-semibold">✉️ Email:</span>
-                  <a href="mailto:descsoftlab22@gmail.com" className="text-[#1c2c3c] hover:underline">
-                    descsoftlab22@gmail.com
+                  <a href="mailto:info@descsoftlab.com" className="text-[#1c2c3c] hover:underline">
+                    info@descsoftlab.com
                   </a>
                 </div>
               </div>
