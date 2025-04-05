@@ -1,6 +1,8 @@
 import ClientPage from "@/components/wrappers/ClientPage";
 import { Metadata } from "next";
 import { ContactForm } from "./[components]/ContactForm";
+import { IoLocation } from "react-icons/io5";
+import { MdEmail, MdLocalPhone } from "react-icons/md";
 
 export const metadata: Metadata = {
   title: "Contact Us | Desc Softlab Ltd - Get in Touch",
@@ -25,41 +27,41 @@ export const metadata: Metadata = {
 const ContactPage = () => {
   return (
     <ClientPage>
-      <div className="bg-gray-50 w-full min-h-screen">
+      <div className="bg-gray-50 w-full">
         {/* Header Section */}
-        <div className="bg-[#1c2c3c] text-white text-center py-12">
+        <div className="bg-main-blue-950 text-white text-center py-12">
           <h1 className="text-4xl font-bold">Get in Touch</h1>
           <p className="mt-2 text-lg">We are here to assist you with all your IT needs</p>
         </div>
 
         {/* Contact Section */}
-        <div className="w-full mx-10 px-6 py-12 grid grid-cols-1 lg:grid-cols-3 gap-10 ">
+        <div className="w-full px-6 py-12 grid grid-cols-1 lg:grid-cols-2 gap-10 overflow-hidden ">
           {/* Contact Form */}
-          <div className="lg:col-span-2 bg-white shadow-lg rounded-lg p-8">
-            <h2 className="text-2xl font-semibold text-[#1c2c3c]">Send Us a Message</h2>
+          <div className="w-full bg-white shadow-lg rounded-lg p-8">
+            <h2 className="text-2xl font-semibold text-main-blue-950">Send Us a Message</h2>
             <ContactForm />
           </div>
 
           {/* Contact Info & Map */}
-          <div className="space-y-8 lg:col-span-1 mr-10">
+          <div className="space-y-8 w-full">
             <div className="bg-white shadow-lg rounded-lg p-6">
-              <h2 className="text-xl font-semibold text-[#1c2c3c]">Contact Information</h2>
+              <h2 className="text-xl font-semibold text-main-blue-950">Contact Information</h2>
               <div className="mt-4 space-y-3">
                 <div className="flex items-center space-x-3">
-                  <span className="text-[#1c2c3c] font-semibold">📍 Address:</span>
+                  <span className="text-main-blue-950 font-semibold flex items-center gap-[2.5px]"><IoLocation /> Address:</span>
                   <p className="text-gray-700">02 Tech Street, Kigali, Rwanda</p>
                 </div>
 
                 <div className="flex items-center space-x-3">
-                  <span className="text-[#1c2c3c] font-semibold">📞 Phone:</span>
-                  <a href="tel:+250123456789" className="text-[#1c2c3c] hover:underline">
+                  <span className="text-main-blue-950 font-semibold flex items-center gap-[2.5px]"><MdLocalPhone /> Phone:</span>
+                  <a href="tel:+250123456789" className="text-main-blue-950 hover:underline">
                     +250 780795232
                   </a>
                 </div>
 
                 <div className="flex items-center space-x-3">
-                  <span className="text-[#1c2c3c] font-semibold">✉️ Email:</span>
-                  <a href="mailto:info@descsoftlab.com" className="text-[#1c2c3c] hover:underline">
+                  <span className="text-main-blue-950 font-semibold flex items-center gap-[2.5px]"><MdEmail/> Email:</span>
+                  <a href="mailto:info@descsoftlab.com" className="text-main-blue-950 hover:underline">
                     info@descsoftlab.com
                   </a>
                 </div>
@@ -67,7 +69,7 @@ const ContactPage = () => {
             </div>
 
             <div className="bg-white shadow-lg rounded-lg p-6">
-              <h2 className="text-xl font-semibold text-[#1c2c3c]">Business Hours</h2>
+              <h2 className="text-xl font-semibold text-main-blue-950">Business Hours</h2>
               <ul className="mt-4 text-gray-700 space-y-1">
                 <li>Monday - Friday: 8:00 AM - 6:00 PM</li>
                 <li>Saturday: 9:00 AM - 1:00 PM</li>

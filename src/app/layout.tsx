@@ -85,13 +85,8 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}
       >
-        {/* Maintenance Notice */}
-        <p className="w-full p-2 bg-gray-100 text-red-600 text-center font-bold text-sm">
-          This Site is under maintenance. We apologize for any inconvenience!
-        </p>
-        
         {/* Main Content */}
         {children}
       </body>

@@ -5,14 +5,13 @@ import { FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa'
 
 const ClientFooter = () => {
   return (
-    <footer className='w-full bg-[#1c2c3c] text-gray-300 p-'>
+    <footer className='w-full bg-main-blue-950 text-gray-300 p-'>
       <div className='w-full mx-auto p-[40px] md:p-[50px]'>
         {/* Main Footer Content */}
         <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px] mb-[40px]'>
           {/* Contact Us Column */}
           <div className='flex flex-col gap-[20px]'>
             <h3 className='text-white text-[1.5rem] font-bold mb-[10px] leading-[1.2]'>Contact us</h3>
-            <p className='text-gray-400 text-[1.0rem] leading-[1.5]'>Desc Softlab</p>
             <div className='flex items-center gap-[15px]'>
               <IoMailOutline className='text-blue-400 text-[1.8rem]' />
               <Link target='_blank' href={'mailto:info@descsoftlab.com'} className='text-[1.0rem] leading-[1.5]'>Support: info@descsoftlab.com</Link>
@@ -30,7 +29,6 @@ const ClientFooter = () => {
           {/* Quick Links Column */}
           <div className='flex flex-col gap-[20px]'>
             <h3 className='text-white text-[1.5rem] font-bold mb-[10px] leading-[1.2]'>Quick Links</h3>
-            <p className='text-gray-400 text-[1.0rem] leading-[1.5]'>Desc Softlab</p>
             <Link href="/" prefetch={true}  className='hover:text-blue-400 transition-colors text-[1.0rem] leading-[1.5]'>Home</Link>
             <Link href="/services" prefetch={true}  className='hover:text-blue-400 transition-colors text-[1.0rem] leading-[1.5]'>Services</Link>
             <Link href="/about" prefetch={true}  className='hover:text-blue-400 transition-colors text-[1.0rem] leading-[1.5]'>About Us</Link>
@@ -39,8 +37,7 @@ const ClientFooter = () => {
 
           {/* Our Services Column */}
           <div className='flex flex-col gap-[20px]'>
-            <h3 className='text-white text-[1.5 rem] font-bold mb-[10px] leading-[1.2]'>Our Services</h3>
-            <p className='text-gray-400 text-[1.0rem] leading-[1.5]'>Desc Softlab</p>
+            <h3 className='text-white text-[1.4rem] font-bold mb-[10px] leading-[1.2]'>Our Services</h3>
             <Link href="/services" prefetch={true}  className='hover:text-blue-400 transition-colors text-[1.0rem] leading-[1.5]'>Web Design & Development</Link>
             <Link href="/services" prefetch={true}  className='hover:text-blue-400 transition-colors text-[1.0rem] leading-[1.5]'>Software Development</Link>
             <Link href="/services" prefetch={true}  className='hover:text-blue-400 transition-colors text-[1.0rem] leading-[1.5]'>IT Consulting</Link>
@@ -50,8 +47,7 @@ const ClientFooter = () => {
 
           {/* Follow Us Column */}
           <div className='flex flex-col gap-[20px]'>
-            <h3 className='text-white text-[1.5rem] font-bold mb-[10px] leading-[1.2]'>Follow us</h3>
-            <p className='text-gray-400 text-[1.0rem] leading-[1.5]'>Desc Softlab</p>
+            <h3 className='text-white text-[1.4rem] font-bold mb-[10px] leading-[1.2]'>Follow us</h3>
             <Link href="https://www.linkedin.com/company/desc-softlab/" target='_blank' className='flex items-center gap-[15px] hover:text-blue-400 transition-colors'>
               <FaLinkedin className='text-blue-400 text-[1.5rem]' />
               <span className='text-[1.0rem] leading-[1.5]'>LinkedIn</span>

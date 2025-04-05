@@ -25,7 +25,7 @@ export const AboutSection = () => {
                 <div className="w-full flex flex-col justify-center gap-[40px]">
                     {/* Mission Section */}
                     <div className="flex flex-col gap-[15px]">
-                        <h2 className="text-4xl font-bold font-sans text-[#1a2b5e] leading-tight">Our Mission</h2>
+                        <h2 className="text-4xl font-bold font-sans text-main-blue-950 leading-tight">Our Mission</h2>
                         <p className="text-xl text-gray-700 leading-relaxed">
                             To utilize our expertise in software engineering and electronic 
                             engineering to provide top-notch digital products and services 
@@ -36,7 +36,7 @@ export const AboutSection = () => {
 
                     {/* Vision Section */}
                     <div className="flex flex-col gap-[15px]">
-                        <h2 className="text-4xl font-bold font-sans text-[#1a2b5e] leading-tight">Our Vision</h2>
+                        <h2 className="text-4xl font-bold font-sans text-main-blue-950 leading-tight">Our Vision</h2>
                         <p className="text-xl text-gray-700 leading-relaxed">
                             To become the leading technology company in Rwanda and beyond, 
                             known for our commitment to providing innovative and reliable 

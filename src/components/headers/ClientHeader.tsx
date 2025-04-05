@@ -40,18 +40,16 @@ const ClientHeader = () => {
      }, []);
 
      return (
-          <div className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md' : 'bg-[#1c2c3c]'}`}>
-               <div className="max-w-[1512px] mx-auto">
+          <>
                     <MobileView scrolled={scrolled} />
                     <DesktopView scrolled={scrolled} />
-               </div>
-          </div>
+          </>
      )
 }
 
 const MobileView = ({ scrolled }: { scrolled: boolean }) => {
      return (
-          <header className={`w-full z-30 lg:hidden flex items-center justify-between p-[15px] transition-all duration-300 ${scrolled ? 'py-[10px]' : 'py-[15px]'}`}>
+          <header className={`sticky top-0 z-50 left-0 w-full lg:hidden flex items-center justify-between p-[15px] transition-all duration-300 ${scrolled ? 'py-[10px] bg-white' : 'py-[15px] bg-main-blue-950'}`}>
                <Link href={'/'} className='w-auto flex items-center justify-start gap-[10px]'>
                     <Image src={'/logos/logo-rb.png'} width={150} height={150} alt='desc' className='w-[50px] aspect-square rounded-full ' />
                     <h1 className={`text-[1.0rem] font-bold transition-colors duration-300 ${scrolled ? 'text-main-blue-950' : 'text-white'}`}>Desc Softlab</h1>
@@ -71,7 +69,7 @@ const MobileView = ({ scrolled }: { scrolled: boolean }) => {
 
 const DesktopView = ({ scrolled }: { scrolled: boolean }) => {
      return (
-          <header className={`w-full hidden lg:flex p-[10px] max-w-[1512px] mx-auto items-center justify-between transition-all duration-300 ${scrolled ? 'bg-white py-[10px]' : 'bg-[#1c2c3c] py-[20px]'}`}>
+          <header className={`sticky top-0 left-0 z-50  hidden lg:flex p-[10px] w-full mx-auto items-center justify-between transition-all duration-300 ${scrolled ? 'bg-white py-[10px]' : 'bg-main-blue-950 py-[20px]'}`}>
                <Link href={'/'} className='w-auto flex items-center justify-start gap-[10px]'>
                     <Image src={'/logos/logo-rb.png'} width={150} height={150} alt='desc' className='w-[50px] aspect-square rounded-full ' />
                     <h1 className={`text-[1.0rem] font-bold transition-colors duration-300 ${scrolled ? 'text-main-blue-950' : 'text-white'}`}>Desc Softlab</h1>

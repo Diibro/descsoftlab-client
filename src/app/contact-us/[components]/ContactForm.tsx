@@ -27,7 +27,7 @@ export const ContactForm = ({}) => {
           }
      }
      return (
-          <form onSubmit={submit} method="POST" className="mt-6 space-y-4">
+          <form onSubmit={submit} method="POST" className="mt-6 space-y-4 w-full">
               <div>
                 <label className="block text-gray-700 font-medium">Full Name:</label>
                 <input
@@ -36,7 +36,7 @@ export const ContactForm = ({}) => {
                   name="name"
                   required
                   onChange={(e) => messageInputs.set("name", e.target.value, "string" )}
-                  className="w-full outline-none border border-gray-300 p-3 rounded-lg focus:border-[#1c2c3c] focus:ring-main-blue-500"
+                  className="w-full outline-none border border-gray-300 p-3 rounded-lg focus:border-main-blue-500 focus:ring-main-blue-500"
                 />
               </div>
 
@@ -48,7 +48,7 @@ export const ContactForm = ({}) => {
                   name="email"
                   required
                   onChange={(e) => messageInputs.set("email", e.target.value, "string" )}
-                  className="w-full border outline-none border-gray-300 p-3 rounded-lg focus:border-[#1c2c3c] focus:ring-main-blue-500"
+                  className="w-full border outline-none border-gray-300 p-3 rounded-lg focus:border-main-blue-500 focus:ring-main-blue-500"
                 />
               </div>
 
@@ -87,7 +87,7 @@ export const ContactForm = ({}) => {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full disabled:bg-gray-600 disabled:cursor-not-allowed bg-[#1c2c3c] text-white font-semibold py-3 rounded-lg hover:bg-[#1c2c3c] transition flex items-center justify-center space-x-2"
+                className="w-full disabled:bg-gray-600 disabled:cursor-not-allowed bg-main-blue-800 text-white font-semibold py-3 rounded-lg hover:bg-main-blue-950 transition flex items-center justify-center space-x-2"
               >
                 <span>Send Message</span> <span>✈️</span>
               </button>
