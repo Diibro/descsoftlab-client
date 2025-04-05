@@ -30,7 +30,7 @@ const AboutPage = () => {
     <ClientPage>
       <div className="bg-gray-50 min-h-screen">
         {/* Hero Section */}
-        <div className="bg-[#1c2c3c] text-white text-center py-12">
+        <div className="bg-main-blue-950 text-white text-center py-12">
           <h1 className="text-4xl font-bold">About Desc Softlab Ltd</h1>
           <p className="mt-2 text-lg">Desc Softlab Ltd is a technology-based company founded to provide innovative digital solutions to individuals and businesses of all sizes.</p>
         </div>
