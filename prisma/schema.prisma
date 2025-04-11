@@ -1,0 +1,61 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String   @id @default(uuid()) @db.Uuid
+  email         String  @unique
+  password      String
+  image         String
+  status        Boolean
+  accounts Account[]
+}
+
+model Account {
+  id                 String  @id @default(uuid()) @db.Uuid
+  userId             String  @db.Uuid
+  provider           String
+  providerAccountId  String
+  refreshToken       String?
+  accessToken        String?
+  accessTokenExpires DateTime?
+  user               User    @relation(fields: [userId], references: [id])
+
+  @@unique([provider, providerAccountId])
+}
+
+model Client{
+  id            String   @id @default(uuid()) @db.Uuid
+  name          String   
+  email String @unique
+  location String
+  createdAt DateTime
+  
+  messages ClientMessage[]
+}
+
+model ClientMessage {
+  id            String   @id @default(uuid()) @db.Uuid
+  message String
+
+  clientId String @db.Uuid
+  client Client @relation(fields: [clientId], references: [id])
+}
+
+enum ETransactionMethod {
+  MOMO
+  CARD
+  BANK
+}
+model Transaction {
+  id String @id @default(uuid()) @db.Uuid
+  method ETransactionMethod 
+  amount Float
+  createdAt DateTime
+  platform String
+}

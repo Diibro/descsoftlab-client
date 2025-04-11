@@ -10,7 +10,7 @@ export const HeroSection = () => {
                     <div className="relative z-10 flex flex-col items-start gap-[20px]">
                          <h1 className="text-[2.5rem] font-extrabold text-main-blue-950 leading-tight">Empowering Digital Transformation</h1>
                          <p className="text-[1.2rem] text-gray-600 max-w-[80%]">Desc Softlab is dedicated to making digital services accessible and affordable across Rwanda and Africa.</p>
-                         <Link href={'/'} className="mt-4 px-[30px] py-[25px] bg-main-blue-900 text-white text-[1.2rem] rounded-[30px] hover:bg-main-blue-600 transition-all duration-300">Explore Our Services →</Link>
+                         <Link href={'/services'} className="mt-4 px-[30px] py-[25px] bg-main-blue-900 text-white text-[1.2rem] rounded-[30px] hover:bg-main-blue-600 transition-all duration-300">Explore Our Services →</Link>
                     </div>
                </div>
                <div className="w-full h-full relative flex items-center justify-center pt-[10px] md:pt-[5px]">
