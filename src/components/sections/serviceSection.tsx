@@ -1,6 +1,7 @@
 import React from 'react'
 import { IServiceCategory, MainServices } from '@/data/services'
 import Link from 'next/link'
+import { FaArrowRight } from 'react-icons/fa6'
 
 
 
@@ -23,24 +24,28 @@ export const ServicesSection = () => {
 const ServiceCard = ({service}:{service: IServiceCategory}) => {
   const Icon = service.icon;
   return (
-    <Link href={`/services/${service.id}`} prefetch={true} className='bg-white rounded-xl hover:shadow-main-blue-800 p-6 md:p-10 shadow-md hover:shadow-lg transition-shadow duration-300 h-full'>
-      <div className="w-14 h-14 bg-main-blue-100 rounded-xl flex items-center justify-center mb-8">
-        <Icon className="text-main-blue-600 text-3xl" />
+    <div className='bg-white rounded-xl hover:shadow-main-blue-800 p-6 md:p-10 shadow-md hover:shadow-lg transition-shadow duration-300 h-full flex flex-col items-start justify-between gap-[10px]'>
+      <div className='w-full flex flex-col items-start gap-[10px] justify-start'>
+        <div className="w-14 h-14 bg-main-blue-100 rounded-xl flex items-center justify-center">
+          <Icon className="text-main-blue-600 text-3xl" />
+        </div>
+        <h3 className="font-inter font-bold text-xl md:text-2xl text-main-blue-900">{service.title}</h3>
+        <p className="font-inter text-gray-600 text-sm md:text-base leading-relaxed">
+          {service.intro}
+        </p>
+        <ul className="space-y-4">
+          {
+            service.services.length > 0 ?  
+              service.services.map((s,index) => index < 2 && <li key={`service-${service.title}-${index}`} className='flex items-center'>
+                <span className="text-main-blue-600 text-xl mr-3">•</span>
+                <span className="font-inter text-gray-700 text-sm md:text-base">{s}</span>
+              </li>)
+            : null
+          }
+        </ul>
       </div>
-      <h3 className="font-inter font-bold text-xl md:text-2xl text-main-blue-900 mb-4">{service.title}</h3>
-      <p className="font-inter text-gray-600 mb-8 text-sm md:text-base leading-relaxed">
-        {service.intro}
-      </p>
-      <ul className="space-y-4">
-        {
-          service.services.length > 0 ?  
-            service.services.map((s,index) => index < 2 && <li key={`service-${service.title}-${index}`} className='flex items-center'>
-              <span className="text-main-blue-600 text-xl mr-3">•</span>
-              <span className="font-inter text-gray-700 text-sm md:text-base">{s}</span>
-            </li>)
-          : null
-        }
-      </ul>
-    </Link>
+
+      <Link href={`/services/${service.id}`} prefetch className='p-[10px] px-[20px] hover:bg-main-blue-100 transition-all duration-200 text-main-blue-800 border-[1.2px] border-main-blue-300 rounded-[30px] text-[0.9rem] flex items-center justify-center gap-[10px] '>View More <FaArrowRight /></Link>
+    </div>
   )
 }

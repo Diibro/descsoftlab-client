@@ -20,7 +20,7 @@ export const HeroSection = () => {
                     {/* Circular image container */}
                     <div className="relative z-10 w-[70%] aspect-square rounded-full overflow-hidden border-8 border-white shadow-lg">
                          <Image 
-                              src={'/home/kwibuka-31.png'} 
+                              src={'/home/hero-back-2.png'} 
                               fill
                               alt="Workspace with laptop, notebook and coffee" 
                               className="object-cover" 
