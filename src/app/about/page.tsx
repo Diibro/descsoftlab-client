@@ -35,7 +35,7 @@ const AboutPage = () => {
         </div>
 
         {/* About Section */}
-        <div className="w-full mx-auto px-16 py-12 text-main-blue-950 justify-between space-y-10">
+        <div className="w-full mx-auto px-4 lg:px-16  py-12 text-main-blue-950 justify-between space-y-10">
           <h2 className="text-3xl font-semibold text-main-blue-950">Who We Are</h2>
           <p className="mt-4 text-[1.1rem] leading-relaxed">
             Desc Softlab Ltd is a technology-driven company specializing in cutting-edge software
