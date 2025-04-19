@@ -7,7 +7,6 @@ const nextConfig: NextConfig = {
   compress: true,
   images: {
     formats: ['image/avif', 'image/webp'], // modern formats
-    domains: ['your-cdn.com'], // whitelist external image sources
   },
   async headers() {
     return [
