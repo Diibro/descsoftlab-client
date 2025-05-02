@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+// import Script from "next/script";
 
 // Load custom fonts
 const geistSans = localFont({
@@ -89,6 +90,7 @@ export default function RootLayout({
       >
         {/* Main Content */}
         {children}
+        {/* <Script src="https://dashboard.sandbox.irembopay.com/assets/payment/inline.js" strategy="afterInteractive" /> */}
       </body>
     </html>
   );

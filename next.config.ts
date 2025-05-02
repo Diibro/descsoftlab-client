@@ -24,8 +24,8 @@ const nextConfig: NextConfig = {
             key: 'Content-Security-Policy',
             value:
               "default-src 'self'; " +
-              "script-src 'self' https: 'unsafe-inline' 'nonce-<RANDOM_NONCE>'; " +  
-              "style-src  'self' https: 'unsafe-inline' 'nonce-<RANDOM_NONCE>'; " +
+              "script-src 'self' https: 'unsafe-inline'" +  
+              "style-src  'self' https: 'unsafe-inline'; " +
               "img-src    'self' data: blob:; " +
               "font-src   'self'; " +
               "connect-src 'self' https://api.descsoftlab.com; " +
